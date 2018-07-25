@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Problemas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./vendor/bootstrap/css/bootstrap.min.css"> 
+    <script src="./vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <button type="button" id="p1" data-toggle="modal" data-target="Concatenar">Problema 1 </button>
+    <button type="button" id="p2" data-toggle="modal" data-target="Matriz">Problema 2</button>
+    <div id="Concatenar" class="modal" role="dialog">
+            <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                      </div>
+                      <div class="modal-body">
+                            <input type="text" name="palabra 1">
+                              <input type="text" name="palabra 2">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+    </div>
+    <div id="Matriz" class="modal"role="dialog">
+        <input type="number" name="filas">
+    </div>
+    <script>
+    $("p1").click(function(){
+        $("Concatenar").modal();
+    });
+
+ 
+    </script>
+   
+</body>
+</html>

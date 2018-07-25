@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <title>Tarea 1</title>
+</head>
+<body>
+    
+    <script>
+    var vari1;
+    vari1=prompt("Ingresa una palabra");
+    var vari2;
+    vari2=prompt("Ingresa otra palabra");
+    var vari3;
+    vari3=prompt("Ingresa otra palabra");
+
+    function isomorphic (vari1, vari2,vari3) {
+    
+    if ( vari1.length != vari2.length && vari1.length != vari3.length ) {
+        document.write('Las palabras no tienen la misma cantidad de letras');
+    	return false;
+    }
+    if ( vari1.length != vari3.length ) {
+        document.write('Las palabras no tienen la misma cantidad de letras');
+    	return false;
+    }
+    if ( vari2.length != vari3.length ) {
+        document.write('Las palabras no tienen la misma cantidad de letras');
+    	return false;
+    }
+    
+    var chMap = {};
+    var chMap2 = {};
+    var chMap3={};
+    var chMap4={};
+    var vari4= vari1;
+    var vari5=vari2;
+    var vari6=vari1;
+    var vari7= vari1;
+    var vari8= vari3;
+    
+    for (var i = 0; i < vari1.length; i++) {
+    	
+        if (!chMap[vari1[i]]) {   	
+            chMap[vari1[i]] = vari2[i];
+     
+        } else if (chMap[vari1[i]] !== vari2[i]) {
+        	document.write('las palabras no son isomorficas');
+            return false;
+        }
+    }
+    for (var i = 0; i < vari4.length; i++) {
+    	
+        if (!chMap2[vari4[i]]) {   	
+            chMap2[vari4[i]] = vari3[i];
+     
+        } else if (chMap2[vari4[i]] !== vari3[i]) {
+        	document.write('las palabras no son isomorficas');
+            return false;
+        }
+    }
+    for (var i = 0; i < vari5.length; i++) {
+    	
+        if (!chMap3[vari5[i]]) {   	
+            chMap3[vari5[i]] = vari6[i];
+     
+        } else if (chMap3[vari5[i]] !== vari6[i]) {
+        	document.write('las palabras no son isomorficas');
+            return false;
+        }
+    }
+    for (var i = 0; i < vari8.length; i++) {
+    	
+        if (!chMap4[vari8[i]]) {   	
+            chMap4[vari8[i]] = vari7[i];
+     
+        } else if (chMap4[vari8[i]] !== vari7[i]) {
+        	document.write('las palabras no son isomorficas');
+            return false;
+        }
+    }
+     
+    document.write('las palabras son isomorficas');
+    return true;
+}
+console.log(isomorphic(vari1,vari2,vari3));  
+    </script>
+</body>
+</html>

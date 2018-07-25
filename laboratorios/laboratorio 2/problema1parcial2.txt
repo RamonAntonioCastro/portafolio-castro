@@ -1,0 +1,47 @@
+<script>
+    var vari1;
+    vari1=prompt("Ingresa una palabra");
+    var vari2;
+    vari2=prompt("Ingresa otra palabra");
+    var vari3;
+    vari3=prompt("Ingresa otra palabra");
+
+    function isomorphic (vari1, vari2,vari3) {
+	
+    var mensaje;
+    
+    if ( vari1.length != vari2.length && vari1.length != vari3.length ) {
+        document.write('Las palabras no tienen la misma cantidad de letras');
+    	return false;
+    }
+    
+    var chMap = {};
+    var chMap2 = {};
+    var vari4= vari1;
+    
+    for (var i = 0; i < vari1.length; i++) {
+    	
+        if (!chMap[vari1[i]]) {   	
+            chMap[vari1[i]] = vari2[i];
+     
+        } else if (chMap[vari1[i]] !== vari2[i]) {
+        	document.write('las palabras no son isomorficas');
+            return false;
+        }
+    }
+    for (var i = 0; i < vari4.length; i++) {
+    	
+        if (!chMap2[vari4[i]]) {   	
+            chMap2[vari4[i]] = vari3[i];
+     
+        } else if (chMap2[vari4[i]] !== vari3[i]) {
+        	document.write('las palabras no son isomorficas');
+            return false;
+        }
+    }
+     
+    document.write('las palabras son isomorficas');
+    return true;
+}
+console.log(isomorphic(vari1,vari2,vari3));  
+    </script>

@@ -1,0 +1,20 @@
+ for (var i = 0; i < vari1.length; i++) {
+    	
+        if (!chMap[vari1[i]]) {   	
+            chMap[vari1[i]] = vari3[i];
+     
+        } else if (chMap[vari1[i]] !== vari3[i]) {
+        	document.write('las palabras no son isomorficas');
+            return false;
+        }
+    }
+    for (var i = 0; i < vari2.length; i++) {
+    	
+        if (!chMap[vari2[i]]) {   	
+            chMap[vari2[i]] = vari3[i];
+     
+        } else if (chMap[vari2[i]] !== vari3[i]) {
+        	document.write('las palabras no son isomorficas');
+            return false;
+        }
+    }
