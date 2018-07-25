@@ -1,0 +1,17 @@
+este es el portafolio de Ramon Castro para la materia Desarrollo 9 dictada por el profesor Erick Agrazal en el primer semestre del año 2018 de la Universidad Tecnologica de Panama
+
+Este portafolio se divide en tres carpetas:
+
+laboratorios: el cual contiene laboratorios y practicas hechas a lo largo del semestre
+
+Pariciales: el cual contiene los parciales hechos en el semestre
+
+Proyecto: el cual es un archivo rar el cual contiene el proyecto final de la materia
+
+Conclusiones
+
+A lo largo de la materia he aprendido un nuevo lenguaje de programacion el cual es muy demandado en el mundo laboral, ademas de utilizar una nueva herramienta (Github) en la cual realizar
+trabajos en conjunto con otros colaboradores es mas sencillo. tambien he aprendido algunos negocios del ecommerce y como estos varian segun el tipo de mercado en el cual se mueven.
+
+Esta materia me ha facinado y me motiva a seguir aprendiendo el lenguaje de programacion Javascript y las ventajas de github para mejorar mis propias habilidades que me seran utiles en mis
+futuras funciones. 
